@@ -1,6 +1,5 @@
 # UART (SystemVerilog)
 
-![Simulation](https://github.com/OlusegunIdowu/UART---SystemVerilog/actions/workflows/sim.yml/badge.svg)
 
 A UART (Universal Asynchronous Receiver-Transmitter) built in SystemVerilog, with a parameterised FIFO in front of the transmitter. Developed and verified entirely through simulation, with no physical FPGA board required.
 
@@ -22,7 +21,7 @@ transmitter/           uart_tx.sv
 reciever/              uart_rx.sv
 fifo/                  fifo.sv, uart_tx_fifo.sv, fifo_tb.sv, uart_fifo_tb.sv
 uart_tx_rx_tb.sv       loopback testbench
-Makefile               make test, make synth
+Makefile               make test
 ```
 
 ## Inputs / Outputs
@@ -140,15 +139,6 @@ iverilog -g2012 -o loopback_sim "baud rate generator/baud_rate_gen.sv" "reciever
 vvp loopback_sim
 ```
 
-## Synthesis Results
-
-Synthesised with Yosys and nextpnr, targeting iCE40 HX8K (no board, estimates only).
-
-| Design | LUT4 | Flip-flops | Fmax (MHz) |
-|---|---|---|---|
-| UART TX + FIFO (depth 16) | [ ] | [ ] | [ ] |
-
-Reproduce with `make synth` (requires Yosys and nextpnr-ice40).
 
 ## Future Work
 
