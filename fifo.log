@@ -1,0 +1,28 @@
+VCD info: dumpfile fifo_signals.vcd opened for output.
+=== FIFO Testbench ===
+PASSED TEST: empty after reset
+PASSED TEST: not full at DEPTH-1
+PASSED TEST: full at DEPTH
+PASSED TEST: full flag held after overflow write
+PASSED TEST: pop 1 is the oldest byte
+PASSED TEST: not full after one pop
+PASSED TEST: pop 2 in order
+PASSED TEST: pop 3 in order
+PASSED TEST: pop 4 in order (0xFF was dropped)
+PASSED TEST: empty after draining
+PASSED TEST: empty held after underflow read
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: wrap-around
+PASSED TEST: empty at end
+
+=== Results: 22 passed, 0 failed ===
+ALL TESTS PASSED
+fifo/fifo_tb.sv:100: $finish called at 640 (1s)

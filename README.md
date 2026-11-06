@@ -95,4 +95,4 @@ A UART (Universal Asynchronous Receiver-Transmitter) built using System Verilog.
         Moving RX to 16x oversampling would make the design robust on real hardware with independent clock sources, rather than relying on TX and RX sharing a clock as they do in simulation.
 
     - Hardware Deployment:
-        Testing the design on an actual FPGA board (e.g. iCEBreaker, Tang Nano) would validate it against a real UART peripheral or USB-serial adapter, rather than simulation alone.
+        Testing the design on an actual FPGA board would validate it against a real UART peripheral or USB-serial adapter, rather than simulation alone.
