@@ -2,3 +2,4 @@
 *_sim
 *.vvp
 .DS_Store
+*.log
